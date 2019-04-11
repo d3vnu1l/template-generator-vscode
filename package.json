@@ -2,7 +2,7 @@
     "name": "template-generator-vscode",
     "displayName": "Template Generator",
     "description": "Files/Folders template for vscode,fork from https://github.com/DengSir/template-generator-vscode.git",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "publisher": "prui",
     "icon": "images/icon.jpg",
     "license": "SEE LICENSE IN LICENSE.md",
