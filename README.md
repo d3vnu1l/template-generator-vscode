@@ -2,6 +2,15 @@
 
 This extension helps in creating files and folders easily from defined templates.
 
+a Files/Folders template for vscode,fork from https://github.com/DengSir/template-generator-vscode.git
+
+make the templateGenerator.templatesPath setting can be a relative path in your workspace
+
+example:
+{
+    "templateGenerator.templatesPath": "${rootPath}/templates"
+}
+
 ## Features
 
 * File template support

@@ -90,7 +90,24 @@ export class Environment {
     }
 
     public get templatesFolderPath(): string {
-        return this.config.get<string>('templatesPath') || path.join(os.homedir(), '.vscode/templates');
+        var templatesPath = this.config.get<string>('templatesPath');
+        var paths = [];
+        templatesPath.split('/').forEach(item => {
+            var result = item.match(/\${(\S*)}/);
+            if (result) {
+                var key = result[1];
+                console.log(vscode.workspace);
+                var temp = vscode.workspace[key];
+                if (temp && typeof temp == 'string') {
+                    paths.push(temp);
+                }
+            } else {
+                paths.push(item);
+            }
+        })
+        console.log(path.join(...paths));
+        // templatesPath.replace(/${*}/g,vscode.workspace[])
+        return path.join(...paths) || path.join(os.homedir(), '.vscode/templates');
     }
 
     public set fileName(fileName: string) {

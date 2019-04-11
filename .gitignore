@@ -2,3 +2,5 @@ out
 node_modules
 .tags
 /package-lock.json
+/yarn.lock
+.vscode-test
