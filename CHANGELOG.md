@@ -5,3 +5,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.1.0]
 - Initial release of fork, added support for upper case filename replacements
+
+## [0.1.1]
+- Add ability to omit entire line

@@ -42,6 +42,7 @@ example:
 * `{__kebabCaseName__}` : kebab-case-file-name
 * `{__lowerDotCaseName__}` : lower.dot.case.file.name
 * `{__upperCaseName__}` : UPPERCASEFILENAME
+* `{__omitLine__}` : remove the entire line where this value appears
 
 * `{__delete__}` : empty string
 

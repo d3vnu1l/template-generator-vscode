@@ -19,6 +19,7 @@ export class Fields {
   private _kebabCaseName: string;
   private _lowerDotCaseName: string;
   private _upperCaseName: string;
+  private _omitLine: null;
 
   public get name() {
     return this._name;
@@ -54,6 +55,11 @@ export class Fields {
     return this._name.toUpperCase();
   }
 
+  @once('_omitLine')
+  public get omitLine() {
+    return null;
+  }
+
   public set name(name: string) {
     this._name = name;
     this._camelCaseName = null;
@@ -62,6 +68,7 @@ export class Fields {
     this._kebabCaseName = null;
     this._lowerDotCaseName = null;
     this._upperCaseName = null;
+    this._omitLine = null;
   }
 
   public get date() {
