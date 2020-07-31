@@ -2,7 +2,7 @@
 
 This extension helps in creating files and folders easily from defined templates.
 
-a Files/Folders template for vscode,fork from https://github.com/DengSir/template-generator-vscode.git
+a Files/Folders template for vscode,fork from https://github.com/prui/template-generator-vscode
 
 make the templateGenerator.templatesPath setting can be a relative path in your workspace
 
@@ -41,6 +41,8 @@ example:
 * `{__snakeCaseName__}` : snake_case_file_name
 * `{__kebabCaseName__}` : kebab-case-file-name
 * `{__lowerDotCaseName__}` : lower.dot.case.file.name
+* `{__upperCaseName__}` : UPPERCASEFILENAME
+
 * `{__delete__}` : empty string
 
 You can define the name displayed on the template selector, like:
